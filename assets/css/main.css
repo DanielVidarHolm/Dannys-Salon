@@ -1770,7 +1770,7 @@ input, select, textarea {
 			left: 0;
 			position: absolute;
 			text-align: center;
-			top: 1em;
+			top: 2em;
 			width: 100%;
 		}
 
@@ -1788,10 +1788,15 @@ input, select, textarea {
 	}
 
 /* Form */
-
+	input[type="time"]{
+		padding:0.65em !important;
+	}
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="date"],
+	input[type="time"],
+	input[type="tel"],
 	textarea {
 		-moz-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -1815,13 +1820,17 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		
 		textarea:focus {
 			border-color: #83d3c9;
 		}
 
 	input[type="text"],
 	input[type="password"],
-	input[type="email"] {
+	input[type="email"],
+	input[type="date"],
+	input[type="time"],
+	input[type="tel"] {
 		line-height: 1em;
 	}
 
@@ -2602,7 +2611,7 @@ input, select, textarea {
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
-		padding: 3em 0;
+		padding: 6em 0;
 	}
 
 		#main > :last-child {
@@ -2646,7 +2655,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #E8EEF4;
+		background: #212121;
 		color: #7c8081;
 		padding: 5em 5em 10em 5em;
 		text-align: center;
@@ -3347,3 +3356,107 @@ input, select, textarea {
 			}
 
 	}
+
+	
+	.style5{
+		background:linear-gradient(180deg, rgb(245, 245, 245), rgb(208, 208, 208));
+		box-shadow: 2px 2px 10px rgb(144, 144, 144);
+		border-radius: 2px;
+		padding:0;
+		margin-bottom:0;
+	}
+	.style5 > header{
+		padding:2em;
+		background:linear-gradient(90deg, rgb(60, 60, 60)10%, rgb(14, 14, 14)60%, rgb(61, 61, 61)) ;
+		margin-bottom:2em;
+	}
+	.style5 > footer{
+		padding:2em;
+		background:linear-gradient(90deg, rgb(60, 60, 60)10%, rgb(14, 14, 14)60%, rgb(61, 61, 61)) ;
+		margin-top:2em;
+	}
+	.style5 > footer button{
+		color:silver;
+	}
+	.style5 > header > h2{
+		margin:0;
+		color:silver ;
+	}
+	.grid-container {
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 250px);
+		margin: 0 auto;
+		max-width: 90%;
+		padding: 1rem 0;
+		transition: 1s ease;
+	  }
+	  .grid-img {
+		border-radius: 0.2rem;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		box-shadow: 3px 3px 10px rgb(74, 74, 74);
+	  }
+	  .item-1 {
+		grid-row: 1;
+	  }
+	  .item-2 {
+		grid-row: 1;
+	  }
+	  .item-3 {
+		grid-row: 1;
+	  }
+	  .item-4 {
+		grid-row: 2;
+	  }
+	  
+	  .item-5 {
+		grid-area: 2 / 2 / 4 / 4;
+	  }
+	  
+	  .item-6 {
+		grid-row: 3;
+	  }
+	  
+	  .item-7 {
+		grid-row: 1;
+	  }
+	  
+	  .item-8 {
+		grid-row: 1;
+	  }
+	  
+	  .item-9 {
+		grid-row: 1;
+	  }
+	  
+	  .item-10 {
+		grid-area: 2 / 1 / 4 / 3;
+	  }
+	  
+	  .item-11 {
+		grid-row: 2;
+	  }
+	  
+	  .item-12 {
+		grid-row: 3;
+	  }
+	  
+	  .item-13 {
+		grid-row: 7;
+	  }
+	  
+	  .item-14 {
+		grid-row: 7;
+	  }
+	  .item-15 {
+		grid-row: 7;
+	  }
+	  
+	  
+	
+	.hidden{
+		display:none;
+	  }

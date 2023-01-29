@@ -94,3 +94,19 @@
 		}
 
 })(jQuery);
+document.querySelector('#slideButton1').addEventListener("click",() => {
+	
+	document.querySelector('#slide1').classList.toggle('hidden')
+	
+	document.querySelector('#slide2').classList.toggle('hidden')
+	
+	
+
+
+})
+document.querySelector('#slideButton2').addEventListener("click",() => {
+	
+	document.querySelector('#slide2').classList.toggle('hidden')
+	
+	document.querySelector('#slide1').classList.toggle('hidden')
+})
