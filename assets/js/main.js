@@ -94,19 +94,64 @@
 		}
 
 })(jQuery);
-document.querySelector('#slideButton1').addEventListener("click",() => {
-	
-	document.querySelector('#slide1').classList.toggle('hidden')
-	
-	document.querySelector('#slide2').classList.toggle('hidden')
-	
-	
 
 
-})
-document.querySelector('#slideButton2').addEventListener("click",() => {
-	
-	document.querySelector('#slide2').classList.toggle('hidden')
-	
-	document.querySelector('#slide1').classList.toggle('hidden')
-})
+let images = [
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400",
+	"https://picsum.photos/500/400"
+];
+
+// This will control the amount of images displayed in the gallery section of the index page
+// Im basicly using the window.innerWidth to determine if it should display 9 images, 6 images or 3 images
+// TODO Set the rest of the images to another slide so you can flip through them
+window.addEventListener('resize', () => {
+	console.log(window.innerWidth)
+	if (window.innerWidth >= 1280){
+		console.log('3x3')
+		if (document.querySelector('#slide1').children.length != 9){
+			document.querySelector('#slide1').textContent = '';
+			for (let i = 0; i < 9; i++){
+				let newImg = document.createElement('img');
+				newImg.src = images[i];
+				document.querySelector('#slide1').appendChild(newImg);
+			}
+		}
+		
+		
+	} else if (window.innerWidth >= 840 && window.innerWidth < 1280){
+		console.log('2x3')
+		if (document.querySelector('#slide1').children.length != 6){
+			document.querySelector('#slide1').textContent = '';
+			for (let i = 0; i < 6; i++){
+				let newImg = document.createElement('img');
+				newImg.src = images[i];
+				document.querySelector('#slide1').appendChild(newImg);
+			}
+		}
+	} else {
+		if (document.querySelector('#slide1').children.length != 3){
+			document.querySelector('#slide1').textContent = '';
+			for (let i = 0; i < 3; i++){
+				let newImg = document.createElement('img');
+				newImg.src = images[i];
+				document.querySelector('#slide1').appendChild(newImg);
+			}
+		}
+	}
+
+}, true)
+
