@@ -2633,9 +2633,12 @@ input, select, textarea {
 		background-size: 25em;
 		padding: 6em 0 0;
 	}
+	#main #priceloc{
+		margin-bottom:0;
+	}
 
 		#main > :last-child {
-			margin-bottom: 0;
+			margin-bottom: 5em;
 		}
 
 		#main .sidebar section {
@@ -2677,9 +2680,26 @@ input, select, textarea {
 	#footer {
 		background: #212121;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		padding: 5em 5em 2em 5em;
 		text-align: center;
 	}
+	#footer li {
+		list-style:none;
+	}
+	#footer .info {
+		text-align:start
+	}
+	/* #footer .icons a{
+		margin-right:1em;
+		
+	}
+	#footer .icons li{
+		padding-left:0;
+		margin: 5px 0
+	} */
+		#footer h4{
+			color:white;
+		}
 
 		#footer .copyright {
 			font-size: 0.8em;
@@ -3565,3 +3585,7 @@ input, select, textarea {
 	.hidden{
 		display:none;
 	  }
+
+#header .bg-black{
+	background-color:black;
+}
