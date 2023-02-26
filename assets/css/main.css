@@ -3502,6 +3502,7 @@ input, select, textarea {
 		#location a {
 			color:white;
 			border-bottom:none;
+			margin: 0 auto;
 		}
 		#googlemaps {
 			padding:20px;

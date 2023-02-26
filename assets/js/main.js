@@ -95,20 +95,20 @@
 let images = [
 	"images/GoodHair/good-hair-man1.jpg",
 	"images/GoodHair/good-hair-kid1.jpg",
-	"images/GoodHair/good-hair-man2.jpg",
 	"images/GoodHair/good-hair-woman1.png",
-	"images/GoodHair/good-hair-man3.png",
+	"images/GoodHair/good-hair-man2.jpg",
 	"images/GoodHair/good-hair-woman2.png",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400"
+	"images/GoodHair/good-hair-woman3.jpg",
+	"images/GoodHair/good-hair-man3.png",
+	"images/GoodHair/good-hair-woman4.jpg",
+	"images/GoodHair/good-hair-woman5.jpg",
+	"images/GoodHair/good-hair-man4.jpg",
+	"images/GoodHair/good-hair-woman6.jpg",
+	"images/GoodHair/good-hair-woman2.png",
+	"images/GoodHair/good-hair-woman2.png",
+	"images/GoodHair/good-hair-woman2.png",
+	"images/GoodHair/good-hair-woman2.png",
+	"images/GoodHair/good-hair-woman2.png"
 ];
 
 // This will control the amount of images displayed in the gallery section of the index page
