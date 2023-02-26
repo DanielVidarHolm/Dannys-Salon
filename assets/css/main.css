@@ -3523,6 +3523,14 @@ input, select, textarea {
 		width:50%;
 		margin: 0 auto 2em;
 	}
+	@media screen and (max-width: 740px){
+		#testamonials h2{
+			
+			width:100%;
+			
+		}
+	}
+	
 	#opening{
 		text-align:start;
 	}

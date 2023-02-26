@@ -93,12 +93,12 @@
 
 
 let images = [
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
-	"https://picsum.photos/500/400",
+	"images/GoodHair/good-hair-man1.jpg",
+	"images/GoodHair/good-hair-kid1.jpg",
+	"images/GoodHair/good-hair-man2.jpg",
+	"images/GoodHair/good-hair-woman1.png",
+	"images/GoodHair/good-hair-man3.png",
+	"images/GoodHair/good-hair-woman2.png",
 	"https://picsum.photos/500/400",
 	"https://picsum.photos/500/400",
 	"https://picsum.photos/500/400",
