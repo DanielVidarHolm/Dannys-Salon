@@ -100,7 +100,7 @@ let images = [
 	"images/GoodHair/good-hair-woman2.png",
 	"images/GoodHair/good-hair-woman3.jpg",
 	"images/GoodHair/good-hair-man3.png",
-	"images/GoodHair/good-hair-woman4.jpg",
+	"images/GoodHair/good-hair-man4.jpg",
 	"images/GoodHair/good-hair-woman5.jpg",
 	"images/GoodHair/good-hair-man4.jpg",
 	"images/GoodHair/good-hair-woman6.jpg",
@@ -115,21 +115,22 @@ let images = [
 // Im basicly using the window.innerWidth to determine if it should display 9 images, 6 images or 3 images
 // TODO Set the rest of the images to another slide so you can flip through them
 window.addEventListener('resize', () => {
-	console.log(window.innerWidth)
+	
 	if (window.innerWidth >= 1280){
-		console.log('3x3')
+		
 		if (document.querySelector('#slide1').children.length != 9){
 			document.querySelector('#slide1').textContent = '';
 			for (let i = 0; i < 9; i++){
 				let newImg = document.createElement('img');
 				newImg.src = images[i];
+				newImg.alt = "A picture of a Great Haircut"
 				document.querySelector('#slide1').appendChild(newImg);
 			}
 		}
 		
 		
 	} else if (window.innerWidth >= 840 && window.innerWidth < 1280){
-		console.log('2x3')
+		
 		if (document.querySelector('#slide1').children.length != 6){
 			document.querySelector('#slide1').textContent = '';
 			for (let i = 0; i < 6; i++){
@@ -150,4 +151,5 @@ window.addEventListener('resize', () => {
 	}
 
 }, true)
+
 

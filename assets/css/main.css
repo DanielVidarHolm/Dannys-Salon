@@ -94,7 +94,7 @@ input, select, textarea {
 	}
 
 		body, input, select, textarea {
-			color: #7c8081;
+			color: #4f4f4f;
 			font-family: 'Lato', sans-serif;
 			font-size: 15pt;
 			font-weight: 300;
@@ -107,13 +107,14 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color: #3fb1a3;
+		color:rgb(175, 175, 230);
+		
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			color:rgb(127, 127, 196);
 		}
 
 	strong, b {
@@ -126,7 +127,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
-		font-weight: 300;
+		font-weight: 500;
 		line-height: 1.75em;
 		margin-bottom: 1em;
 		text-transform: uppercase;
@@ -1973,6 +1974,15 @@ input, select, textarea {
 				.icon.circle.fa-facebook-f:hover {
 					background: #829bc9;
 				}
+				.icon.circle.fa-instagram {
+					background: #d6249f;
+  					background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  					box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+
+					color: #fff;
+				}
+	
+					
 
 			.icon.circle.fa-google-plus-g {
 				background: #db6b67;
@@ -2005,7 +2015,7 @@ input, select, textarea {
 			cursor: default;
 			display: block;
 			margin: 0 0 1.5em 0;
-			opacity: 0.35;
+			opacity: 0.75;
 			text-align: center;
 		}
 
@@ -2225,7 +2235,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		margin-bottom: 5em;
+		margin-bottom: 8em;
 		padding: 5em;
 	}
 
@@ -2549,6 +2559,50 @@ input, select, textarea {
 			opacity: 1;
 		}
 	}
+	@-moz-keyframes reveal-deal {
+		0% {
+			right:100%;
+			opacity: 0.5;
+		}
+	
+		100% {
+			right:0;
+			opacity:1;
+		}
+	}
+	@-webkit-keyframes reveal-deal {
+		0% {
+			right:100%;
+			opacity: 0.5;
+		}
+	
+		100% {
+			right:0;
+			opacity:1;
+		}
+	}
+	@-ms-keyframes reveal-deal {
+		0% {
+			right:100%;
+			opacity: 0.5;
+		}
+	
+		100% {
+			right:0;
+			opacity:1;
+		}
+	}
+	@keyframes reveal-deal {
+		0% {
+			right:100%;
+			opacity: 0.5;
+		}
+	
+		100% {
+			right:0;
+			opacity:1;
+		}
+	}
 	video {
 		object-fit: cover;
 		width: 100%;
@@ -2564,7 +2618,40 @@ input, select, textarea {
 		text-align: center;
 		position:relative;
 	}
+		.deal {
+			-moz-animation: reveal-deal 1s 2.5s ease-in-out;
+			-webkit-animation: reveal-deal 1s 2.5s ease-in-out;
+			-ms-animation: reveal-deal 1s 2.5s ease-in-out;
+			animation: reveal-deal 1s 2.5s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			background: rgba(0, 0, 0, 1);
+			color: #fff;
+			display: block;
+			opacity: 0;
+			padding: 1em;
+			text-align: center;
+			position:relative;
+			bottom:3em;
+			right:100%;
+		}
+		.deal .deal-text {
+			margin:0;
+			padding-left:1em;
+			padding-right:1em;
+			display:inline-block;
+			border-top:1px solid white;
+			border-bottom:1px solid white;
 
+		}
+		.deal .notice-me{
+			padding-left:5em;
+			padding-right:5em;
+		
+			
+		}
 		#banner .inner {
 			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
 			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -3406,6 +3493,26 @@ input, select, textarea {
 			margin:0 auto 1.5em;
 			border-bottom:2px solid white;
 		}
+		@media screen and (max-width: 1040px) {
+			.service-card > header > h2{
+				font-size:1em;
+				
+			}
+			.service-card > header > p{
+				font-size:0.7em;
+				
+			}
+		}
+		@media screen and (max-width: 840px) {
+			.service-card > header > h2{
+				font-size:2.5em;
+				
+			}
+			.service-card > header > p{
+				font-size:1em;
+				
+			}
+		}
 	.service-card{
 		position:relative;
 	
@@ -3442,7 +3549,7 @@ input, select, textarea {
 			}
 		.service-card header p{
 			position:absolute;
-			padding:0 0 1em 0;
+			padding:0 5px 1em 5px;
 			
 		}
 		.service-card footer{
@@ -3500,9 +3607,11 @@ input, select, textarea {
 		text-align:center;
 	}
 		#location a {
-			color:white;
-			border-bottom:none;
-			margin: 0 auto;
+			display:inline-block;
+			
+			
+			width:100%;
+			text-align:center;
 		}
 		#googlemaps {
 			padding:20px;
@@ -3542,6 +3651,7 @@ input, select, textarea {
 	.product {
 		border-bottom: 1px solid #aaa;
 	}
+	
 	.product .product-name {
 		font-weight: 500;
 		
@@ -3588,7 +3698,18 @@ input, select, textarea {
 	}
 	.gallery img{
 		width:100%;
+		border-radius:5px;
+		transform:scale(1);
+		transition: transform 0.5s
+	}
+	.gallery img:hover{
+		transform:scale(1.05);
+		z-index:100;
 	}  
+	#gallery .button{
+		margin-left:4.5em;
+		color:white;
+	}
 	
 	
 	.hidden{
@@ -3597,4 +3718,8 @@ input, select, textarea {
 
 #header .bg-black{
 	background-color:black;
+}
+.align-right{
+	
+    float: right;
 }
