@@ -1,5 +1,4 @@
 
-
 (function($) {
 
 	var	$window = $(window),
@@ -151,5 +150,8 @@ window.addEventListener('resize', () => {
 	}
 
 }, true)
+
+
+
 
 
