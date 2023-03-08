@@ -90,24 +90,24 @@
 
 })(jQuery);
 
-
-let images = [
-	"images/GoodHair/good-hair-man1.jpg",
-	"images/GoodHair/good-hair-kid1.jpg",
-	"images/GoodHair/good-hair-woman1.png",
-	"images/GoodHair/good-hair-man2.jpg",
-	"images/GoodHair/good-hair-woman2.png",
-	"images/GoodHair/good-hair-woman3.jpg",
-	"images/GoodHair/good-hair-man3.png",
-	"images/GoodHair/good-hair-man4.jpg",
-	"images/GoodHair/good-hair-woman5.jpg",
-	"images/GoodHair/good-hair-man4.jpg",
-	"images/GoodHair/good-hair-woman6.jpg",
-	"images/GoodHair/good-hair-woman2.png",
-	"images/GoodHair/good-hair-woman2.png",
-	"images/GoodHair/good-hair-woman2.png",
-	"images/GoodHair/good-hair-woman2.png",
-	"images/GoodHair/good-hair-woman2.png"
+// Here you Can Add new Images to the homepage
+// Before uploading the image to the folder you will need to change the oriantation of the image as portrait 4/3 dimention
+// convert it to a .jpg format using https://image.online-convert.com/convert-to-jpg
+// if the image file is more than 1 megabyte you will need to resize the image:  Contact Support
+// now upload the images to the GoodHair folder
+// give the new image a simple new name such as img20
+// since the homepage display can only show up to 9 images you will need to replace an old image below with the new image
+// use this path to find your image "images/GoodHair/yourNewImage.jpg"
+const imagesDisplay = [
+	"images/GoodHair/img1.jpg",
+	"images/GoodHair/img2.jpg",
+	"images/GoodHair/img3.jpg",
+	"images/GoodHair/img4.jpg",
+	"images/GoodHair/img5.jpg",
+	"images/GoodHair/img6.jpg",
+	"images/GoodHair/img7.jpg",
+	"images/GoodHair/img8.jpg",
+	"images/GoodHair/img9.jpg",
 ];
 
 // This will control the amount of images displayed in the gallery section of the index page
@@ -121,7 +121,7 @@ window.addEventListener('resize', () => {
 			document.querySelector('#slide1').textContent = '';
 			for (let i = 0; i < 9; i++){
 				let newImg = document.createElement('img');
-				newImg.src = images[i];
+				newImg.src = imagesDisplay[i];
 				newImg.alt = "A picture of a Great Haircut"
 				document.querySelector('#slide1').appendChild(newImg);
 			}
@@ -134,7 +134,7 @@ window.addEventListener('resize', () => {
 			document.querySelector('#slide1').textContent = '';
 			for (let i = 0; i < 6; i++){
 				let newImg = document.createElement('img');
-				newImg.src = images[i];
+				newImg.src = imagesDisplay[i];
 				document.querySelector('#slide1').appendChild(newImg);
 			}
 		}
@@ -143,15 +143,12 @@ window.addEventListener('resize', () => {
 			document.querySelector('#slide1').textContent = '';
 			for (let i = 0; i < 3; i++){
 				let newImg = document.createElement('img');
-				newImg.src = images[i];
+				newImg.src = imagesDisplay[i];
 				document.querySelector('#slide1').appendChild(newImg);
 			}
 		}
 	}
 
 }, true)
-
-
-
 
 
