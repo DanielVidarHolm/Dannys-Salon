@@ -116,6 +116,9 @@ input, select, textarea {
 		a:hover {
 			color:rgb(127, 127, 196);
 		}
+		a.button:hover{
+			color:inherit;
+		}
 
 	strong, b {
 		font-weight: 400;
@@ -3618,7 +3621,10 @@ input, select, textarea {
 	#priceloc .pricelist{
 		padding-bottom:50px;
 		text-align:start;
-	}IL
+	}
+	h1 > a:hover{
+		color:white;
+	}
 	#location{
 		text-align:center;
 	}
