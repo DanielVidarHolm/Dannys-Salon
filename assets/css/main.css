@@ -2459,6 +2459,16 @@ input, select, textarea {
 			padding: 1.5em 2em;
 			position: absolute;
 		}
+		#header.alt2 {
+			-moz-animation: none;
+			-webkit-animation: none;
+			-ms-animation: none;
+			animation: none;
+			background-color: rgb(37, 37, 37);
+			box-shadow: none;
+			color: #fff;
+			position: absolute;
+		}
 
 			#header.alt nav {
 				right: 2.5em;
@@ -3419,9 +3429,9 @@ input, select, textarea {
 			}
 
 				#banner .inner {
-					background: none;
+					padding:3em 0;
 					display: block;
-					padding: 0 1.5em;
+					
 				}
 
 					#banner .inner header h2 {
@@ -3713,7 +3723,6 @@ input, select, textarea {
 		z-index:100;
 	}  
 	#gallery .button{
-		margin-left:4.5em;
 		color:white;
 	}
 	
@@ -3732,4 +3741,22 @@ input, select, textarea {
 .contacts > li {
 	padding-bottom:5px;
 	line-height:1.2em
+}
+#social-bar{
+	display:flex;
+	flex-direction:column;
+	position:fixed;
+	gap:0.5em;
+	right:0.5em;
+	bottom:0.5em;
+}
+
+#social-bar > #first{
+	transform:translateY(5.3em)
+}
+#social-bar > #second{
+	transform:translateY(2.65em)
+}
+#social-bar > #third{
+	
 }

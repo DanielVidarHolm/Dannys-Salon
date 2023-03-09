@@ -99,14 +99,15 @@
 // since the homepage display can only show up to 9 images you will need to replace an old image below with the new image
 // use this path to find your image "images/GoodHair/yourNewImage.jpg"
 const imagesDisplay = [
-	"images/GoodHair/img1.jpg",
-	"images/GoodHair/img2.jpg",
-	"images/GoodHair/img3.jpg",
-	"images/GoodHair/img4.jpg",
+	
+	"images/GoodHair/img10.jpg",
 	"images/GoodHair/img5.jpg",
 	"images/GoodHair/img6.jpg",
+	"images/GoodHair/img12.jpg",
+	"images/GoodHair/img2.jpg",
+	"images/GoodHair/img3.jpg",
 	"images/GoodHair/img7.jpg",
-	"images/GoodHair/img8.jpg",
+	"images/GoodHair/img11.jpg",
 	"images/GoodHair/img9.jpg",
 ];
 
@@ -186,5 +187,15 @@ window.addEventListener('resize', () => {
 	}
 
 }, true)
-
+document.querySelector('#third').addEventListener('mouseenter', () => {
+	document.querySelector('#first').style.transform = "translateY(0)"
+	document.querySelector('#second').style.transform = "translateY(0)"
+})
+document.querySelector('#social-bar').addEventListener('mouseleave', () => {
+	setTimeout(() => {
+		document.querySelector('#first').style.transform = "translateY(5.3em)"
+		document.querySelector('#second').style.transform = "translateY(2.65em)"
+	}, 500)
+	
+})
 
