@@ -23,10 +23,10 @@
 		});
 
 	// Scrolly.
-		$('.scrolly').scrolly({
-			speed: 1000,
-			offset: function() { return $header.height() + 10; }
-		});
+		// $('.scrolly').scrolly({
+		// 	speed: 1000,
+		// 	offset: function() { return $header.height() + 10; }
+		// });
 
 	// // Dropdowns.
 	// 	$('#nav > ul').dropotron({
