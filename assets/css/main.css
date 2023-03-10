@@ -1990,6 +1990,12 @@ input, select, textarea {
 
 					color: #ffffff;
 				}
+				.icon.circle.fa-youtube {
+					background: #ff0000;
+  					
+
+					color: #ffffff;
+				}
 	
 					
 
@@ -3755,14 +3761,18 @@ input, select, textarea {
 	gap:0.5em;
 	right:0.5em;
 	bottom:0.5em;
+	z-index:2000;
 }
 
 #social-bar > #first{
-	transform:translateY(5.3em)
+	transform:translateY(7.95em);
+	opacity:0
 }
 #social-bar > #second{
-	transform:translateY(2.65em)
+	transform:translateY(5.3em);
+	opacity:0
 }
 #social-bar > #third{
-	
+	transform:translateY(2.65em);
+	opacity:0
 }

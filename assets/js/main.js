@@ -187,14 +187,22 @@ window.addEventListener('resize', () => {
 	}
 
 }, true)
-document.querySelector('#third').addEventListener('mouseenter', () => {
+document.querySelector('#fourth').addEventListener('mouseenter', () => {
+	document.querySelector('#first').style.opacity = 1
+	document.querySelector('#second').style.opacity = 1
+	document.querySelector('#third').style.opacity = 1
 	document.querySelector('#first').style.transform = "translateY(0)"
 	document.querySelector('#second').style.transform = "translateY(0)"
+	document.querySelector('#third').style.transform = "translateY(0)"
 })
 document.querySelector('#social-bar').addEventListener('mouseleave', () => {
 	setTimeout(() => {
-		document.querySelector('#first').style.transform = "translateY(5.3em)"
-		document.querySelector('#second').style.transform = "translateY(2.65em)"
+		document.querySelector('#first').style.transform = "translateY(7.95em)"
+		document.querySelector('#second').style.transform = "translateY(5.3em)"
+		document.querySelector('#third').style.transform = "translateY(2.65em)"
+		document.querySelector('#first').style.opacity = 0
+		document.querySelector('#second').style.opacity = 0
+		document.querySelector('#third').style.opacity = 0
 	}, 500)
 	
 })
