@@ -100,15 +100,15 @@
 // use this path to find your image "images/GoodHair/yourNewImage.jpg"
 const imagesDisplay = [
 	
-	"images/GoodHair/img10.jpg",
-	"images/GoodHair/img5.jpg",
-	"images/GoodHair/img6.jpg",
-	"images/GoodHair/img12.jpg",
-	"images/GoodHair/img2.jpg",
-	"images/GoodHair/img3.jpg",
-	"images/GoodHair/img7.jpg",
-	"images/GoodHair/img11.jpg",
-	"images/GoodHair/img9.jpg",
+	"images/GoodHair/img10.webp",
+	"images/GoodHair/img5.webp",
+	"images/GoodHair/img6.webp",
+	"images/GoodHair/img12.webp",
+	"images/GoodHair/img2.webp",
+	"images/GoodHair/img3.webp",
+	"images/GoodHair/img7.webp",
+	"images/GoodHair/img11.webp",
+	"images/GoodHair/img9.webp",
 ];
 
 // This will control the amount of images displayed in the gallery section of the index page
