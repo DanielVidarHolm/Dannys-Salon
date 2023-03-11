@@ -90,6 +90,10 @@
 
 })(jQuery);
 
+
+
+// ########################################################################################################################################
+
 // Here you Can Add new Images to the homepage
 // Before uploading the image to the folder you will need to change the oriantation of the image as portrait 4/3 dimention
 // convert it to a .jpg format using https://image.online-convert.com/convert-to-jpg
@@ -110,6 +114,8 @@ const imagesDisplay = [
 	"images/GoodHair/img11.webp",
 	"images/GoodHair/img9.webp",
 ];
+//###########################################################################################################################################
+
 
 // This will control the amount of images displayed in the gallery section of the index page
 // Im basicly using the window.innerWidth to determine if it should display 9 images, 6 images or 3 images

@@ -1,3 +1,5 @@
+// ###########################################################################################################################################
+
 // Here you Can Add new Images to the homepage
 // Before uploading the image to the folder you will need to change the oriantation of the image as portrait 4/3 dimention
 // convert it to a .webp format using https://image.online-convert.com/convert-to-webp
@@ -25,6 +27,7 @@ const images = [
 	"images/GoodHair/img16.webp"
 ];
 
+// ###########################################################################################################################################
 
 window.addEventListener('load', () => {
     for (let i = 0; i < images.length; i++){
