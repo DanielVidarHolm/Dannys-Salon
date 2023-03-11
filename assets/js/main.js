@@ -135,6 +135,7 @@ window.addEventListener('load', () => {
 			for (let i = 0; i < 6; i++){
 				let newImg = document.createElement('img');
 				newImg.src = imagesDisplay[i];
+				newImg.alt = "A picture of a Great Haircut"
 				document.querySelector('#slide1').appendChild(newImg);
 			}
 		}
@@ -144,6 +145,7 @@ window.addEventListener('load', () => {
 			for (let i = 0; i < 3; i++){
 				let newImg = document.createElement('img');
 				newImg.src = imagesDisplay[i];
+				newImg.alt = "A picture of a Great Haircut"
 				document.querySelector('#slide1').appendChild(newImg);
 			}
 		}
@@ -172,6 +174,7 @@ window.addEventListener('resize', () => {
 			for (let i = 0; i < 6; i++){
 				let newImg = document.createElement('img');
 				newImg.src = imagesDisplay[i];
+				newImg.alt = "A picture of a Great Haircut"
 				document.querySelector('#slide1').appendChild(newImg);
 			}
 		}
@@ -181,6 +184,7 @@ window.addEventListener('resize', () => {
 			for (let i = 0; i < 3; i++){
 				let newImg = document.createElement('img');
 				newImg.src = imagesDisplay[i];
+				newImg.alt = "A picture of a Great Haircut"
 				document.querySelector('#slide1').appendChild(newImg);
 			}
 		}

@@ -107,7 +107,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-		color:rgb(175, 175, 230);
+		color:#b9c9fb;
 		
 		text-decoration: none;
 		
@@ -2791,20 +2791,22 @@ input, select, textarea {
 
 	#footer {
 		background: #212121;
-		color: #7c8081;
+		color: #dddddd;
 		padding: 5em 5em 2em 5em;
 		text-align: center;
 	}
 	#footer li {
 		list-style:none;
+		
 	}
 	#footer .info {
 		text-align:start
 	}
-	/* #footer .icons a{
+	/* #footer a{
 		margin-right:1em;
 		
-	}
+	} */
+	/*
 	#footer .icons li{
 		padding-left:0;
 		margin: 5px 0
